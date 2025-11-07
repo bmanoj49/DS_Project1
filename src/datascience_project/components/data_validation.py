@@ -8,24 +8,21 @@ class DataValidation:
         self.config = config
     
     def validate_all_columns(self)-> bool:
-        try:
-            validation_status = None
-
+        try:            
             data=pd.read_csv(self.config.unzip_dir)
             all_cols=list(data.columns)
             all_schema=self.config.all_schema.keys()
 
             for col in all_cols:
                 if col not in all_schema:
-                    validation_status=False
                     with open(self.config.STATUS_FILE,'w') as f:
-                        f.write(f"validation_status: {validation_status}\n")
-                else:
-                    validation_status=True
-                    with open(self.config.STATUS_FILE,'w') as f:
-                        f.write(f"validation_status: {validation_status}\n")
-            return validation_status
+                        f.write(f"False")
+                    return False
+                    #  If everything matches
+            with open(self.config.STATUS_FILE, "w") as f:
+                f.write("True")
+            return True
+
         except Exception as e:
-            logger.exception(e)
-            raise e
+          raise e  
 
