@@ -9,7 +9,7 @@ Data science project using MLOPS practices
 2) Data Validation
 3) Data Transformation -- Feature Engineering,Data Preprocessing
 4) Model Training
-5) Model Evaluation
+5) Model Evaluation   - MLFLOW,Dagshub
 
 ## Workflows
 

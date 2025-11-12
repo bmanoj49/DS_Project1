@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Mlops_Projects/DS_Project1/mlruns/0/93847023b5cb413eb7d55f7fcd558264/artifacts
+end_time: 1762947928207
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 93847023b5cb413eb7d55f7fcd558264
+run_name: honorable-rat-704
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762947922411
+status: 3
+tags: []
+user_id: bmano
